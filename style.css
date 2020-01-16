@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Asap&display=swap');
+:root {
+    --main-bg-color: rgb(64, 71, 73);
+    --main-font-color: rgb(179, 179, 179);
+    --light-blue: rgb(183, 234, 246);
+    --light-gray: rgb(117, 117, 117);
+    --light-yellow: rgb(255, 250, 150);
+    --dark-green: rgb(131, 179, 99);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Asap, sans-serif;
+    background-color: var(--main-bg-color);
+    text-align: center;
+}
+
+h1 {
+    padding: 2rem 0;
+    color: var(--main-bg-color);
+    background-color: var(--main-font-color);
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.score-board {
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin: 3rem auto 2rem;
+    padding: 8rem 0;
+    width: 28rem;
+    height: 4rem;
+    border: 5px solid var(--light-gray);
+    border-radius: 2rem;
+    background: var(--main-bg-color);
+}
+
+.badge {
+    padding: 1rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+}
+
+#user-label {
+    position: absolute;
+    top: 50%;
+    left: -23%;
+    font-weight: 600;
+    padding: 1.4rem;
+    border-radius: 10px;
+    border: 5px solid var(--light-gray);
+    color: var(--main-bg-color);
+    background: var(--light-blue);
+    transform: translateY(-50%);
+}
+
+#comp-label {
+    position: absolute;
+    top: 50%;
+    right: -24%;
+    font-weight: 600;
+    padding: 1.4rem;
+    border-radius: 10px;
+    border: 5px solid var(--light-gray);
+    color: var(--main-bg-color);
+    background: var(--light-yellow);
+    transform: translateY(-50%);
+}
+
+.score {
+    display: flex;
+    flex-flow: row;
+    font-size: 3rem;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.colon {
+    width: 8rem;
+    color: #fff;
+}
+
+.user-score {
+    text-align: center;
+    color: var(--light-blue);
+}
+
+.comp-score {
+    text-align: center;
+    color: var(--light-yellow);
+}
+
+.result {
+    font-size: 2rem;
+    color: #fff;
+    padding: 2rem;
+    line-height: 3rem;
+    margin: 1rem auto;
+    background-color: var(--main-bg-color);
+}
+
+.choices {
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+}
+
+.choice {
+    padding: 2rem;
+    margin: 0 1rem;
+    border: 5px solid var(--main-font-color);
+    border-radius: 50%;
+}
+
+.choice img {
+    width: 50px;
+    height: 50px;
+}
+
+#scissors {
+    transform: rotate(90deg);
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: var(--dark-green);
+    border: 5px solid var(--dark-green);
+}
+
+.action {
+    margin-top: 2rem;
+    color: var(--main-font-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
